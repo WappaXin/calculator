@@ -1,67 +1,120 @@
-    .numberContainer{
-        height: 400px;
-        width: 500px;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap ;
-        flex: 1 1 auto;
-        border: 5px ridge black ;
-        justify-content: center;
-        gap: 5px;
-        padding: 10px;
-    }
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:#b2f7ef;
+}
 
-    button.number{
-        width: 150px;
-        height: 90px;
-        font-size: 60px;
-    }
+.line{
+    margin-top: 10%;
+    margin-bottom:2% ;
+    align-self: center;
+    font-size: 30px;
+}
 
-    .symbolContainer{
-        height: 400px;
-        width: 500px;
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap ;
-        flex: 1 1 auto;
-        border: 5px ridge black ;
-        justify-content: center;
-        gap: 5px;
-        padding: 10px;
-    }
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}    
+    
+.numberContainer{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap ;
+    flex: 0 0 auto;
+    border: 5px solid #003459 ;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: #cdb4db;
+    border-right: none;
+}
 
-    button.symbol{
-        width: 150px;
-        height: 75px;
-        font-size: 60px;
+button.number{
+    width: 150px;
+    height: 90px;
+    font-size: 55px;
+    background-color: #ffc8dd;
+    border-radius: 20px;
+    border: none;
+    
+}
 
-    }
+button.number:hover {
+    background-color: #ff79aa;
+    font-size: 65px;
+    transform: scale(1.1);
+    border: 5px rgba(39, 38, 38, 0.775) solid;
+    transition: 0.15s;
+}
 
-    .display{
-        width: 450px;
-        height: 150px;
-        border: 5px solid blue;
-        font-size: 20px;
-        }
+.symbolContainer{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap ;
+    flex: 0 0 auto;
+    border: 5px solid #003459 ;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: #cdb4db;
+    border-left: none;
+}
 
-    button.backSpace{
-        display: flex; 
-        justify-content: center;
-        align-items: start;
-        font-size: 60px;
-        width: 150px;
-        height: 75px;
-        
-    }
+button.symbol{
+    width: 150px;
+    height: 75px;
+    font-size: 60px;
+    background-color: #ffc8dd;
+    border: none;
+    border-radius: 20px;
+}
 
-    button.clear{
-        width: 150px;
-        height: 75px;
-        font-size: 35px;
-    }
+.display{
+    width: 450px;
+    height: 150px;
+    border: 5px solid #178cf9 ;
+    font-size: 20px;
+    background-color: #c7e3fc;
+}
 
-    button.dot{
-        width: 150px;
-        height: 75px;
-        font-size: 35px;
-    }
+button.backSpace{
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    font-size: 60px;
+    width: 150px;
+    height: 75px;
+    background-color: #ffc8dd;
+    border: none;
+    border-radius: 20px;
+}
+
+button.clear{
+    width: 150px;
+    height: 75px;
+    font-size: 35px;
+    background-color: #ffc8dd;
+    border: none;
+    border-radius: 20px;
+}
+
+button.dot{
+    width: 150px;
+    height: 75px;
+    font-size: 35px;
+    background-color: #ffc8dd;
+    border: none;
+    border-radius: 20px;
+}
+
+button.clear:hover , button.backSpace:hover , button.symbol:hover , button.dot:hover {
+    background-color: #ff79aa;
+    transform: scale(1.1);
+    border: 5px rgba(39, 38, 38, 0.775) solid;
+    transition: 0.15s;
+}
